@@ -108,13 +108,10 @@
       5. Cập nhật disable của tất cả sản phẩm thành false (Hint: dùng find map)
       */
       /*----Code here-----*/
-      const productsFindDis =  products.find((item) => {
-        if(item.disable == false) {
-          item.disable = true
-        return item
-        }
-      })
-      console.log(productsFindDis);
+      const newProduct = products.map((item) => item);
+      const findProducts = newProduct.find((item) => item.disable = false);
+
+      console.log(newProduct);
       /*------------------------------*/
     </script>
   </body>
